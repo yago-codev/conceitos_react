@@ -1,0 +1,54 @@
+1)  É preciso ter o Node, NPM e o Yarn. 
+
+2)  Instalar globalmente o "create-react-app".
+
+    Porque iremos utilizar o pacote "create-react-app"?
+    O React utiliza as versões mais recentes do JS/EcmaScript.
+    Porém, essas versões não são totalmente compreendidas pelos browsers, 
+    portanto sempre precisaremos realizar o procedimento de transpilar nosso código escrito com React.
+    É justamente por isso que estamos usando o pacote "create-react-app", 
+    pois ele traz consigo essa parte de transpilação configurada e pronta pra sairmos utilizando.
+
+    Comando para instalar o "create-react-app":
+
+    npm install -g create-react-app 
+
+3)  Criando o primeiro projeto em ReactJS:
+
+    Rodar o seguinte comando no terminal:
+
+    create-react-app nome_do_projeto
+
+4)  Conhecendo a estrutura de pastas criada automaticamente pelo "create-react-app":
+
+    - node_modules: é onde ficam as dependencias do projeto.
+
+    - public: é aqui onde ficam todos os arquivos que serão acessíveis diretamente pelo usuário final da aplicação. 
+              os arquivos de css, imagens... não ficarão aqui. 
+    
+    - src: é onde irão ficar basicamente todo o nosso código de desenvolvimento da aplicação. 
+
+    - package.json: é onde estarão listadas todas as dependencias do projeto. 
+
+5)  Startando o projeto:
+
+    Por padrão, quando instalamos o projeto com o comando "create-react-app", 
+    ele já traz consigo toda uma estrutura pra sairmos desenvolvendo logo de cara. 
+
+    Dentro do package.json nós teremos alguns scripts que 
+    poderão ser executados para facilitar o nosso processo de desenvolvimento. 
+
+    A seguir conheceremos um script chamado "start".
+
+    Para utilizar esse comando,
+    basta estar na pasta do projeto e rodar o seguinte comando no terminal:
+
+    npm start
+
+    O que o comando npm start faz?
+    Ele irá abrir automaticamente o nosso projeto no browser, 
+    além disso ficará monitorando/assistindo todas as mudanças que forem feitas nos arquivos, 
+    restartando automaticamente o projeto, fazendo com que as alterações sejam 
+    instantaneamente refletidas. 
+
+    

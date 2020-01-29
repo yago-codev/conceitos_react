@@ -1,0 +1,65 @@
+1)  O ReactJS NÃO é um framework que conseguirá fazer mais do que aquilo que o JS já faz.
+    Porém, ele consegue fazer as mesmas coisas que o JS, mas de uma forma completamente organizada. 
+
+2)  O ReactJS é uma biblioteca/lib que serve para manipular a DOM. 
+    Além disso, o ReactJS é muito utilizado para a construção de SPAs, Single Page Applications. 
+
+3)  O ReactJS trabalha com o conceito de componentização.
+
+4)  Como identificar um componente?
+    Os componentes basicamente serão escritos em formato de Classe, quase todos.
+    Essa Classe do Componente irá extender, ou seja,
+    ela irá herdar sempre de uma classe pai chamada React.Component.
+
+    Exemplo:
+
+    class HelloMessage extends React.Component {
+      
+    }
+
+5)  Renderizando HTML:
+
+    Dentro da classe nós teremos um método chamado render(),
+    que será o método responsável por renderizar o HTML.
+
+    Porém, 
+    esse não é um simples HTML, 
+    nós chamamos essa estrutura de JSX.
+
+    Mas porque ele não é um simples HTML?
+    Se repararmos bem, perceberemos que junto ao HTML teremos a inclusão de variáveis e
+    conseguirimos incluir código JS DENTRO do HTML. 
+    Ou seja, nós iremos fazer com que o código HTML seja manipulado pelo JS.
+
+    Exemplo de JSX:
+
+    render() {
+      return (
+        <div>
+          Hello { this.props.name }
+        </div>
+      )
+    }
+
+6)  Renderizando o componente:
+
+    Suponhamos que tenhamos o seguinte componente:
+
+    class HelloMessage extends React.Component {
+      render() {
+        return (
+          <div>
+            Hello { this.props.name }
+          </div>
+        )
+      }
+    }
+
+    ...
+
+    Após a declaração desse Componente, 
+    iremos renderizar-lo através do ReactDOM:
+
+    ReactDOM.render(
+      <HelloMessage name="Taylor"/>
+    )
